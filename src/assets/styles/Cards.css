@@ -1,0 +1,36 @@
+main .cards-container-main ul li .card-cont div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+main .cards-container-main ul li .card-cont h2{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+main .cards-container-main ul li .card-cont button{
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+}
+main .cards-container-main ul li .card-cont button:hover{
+    transform: translateY(-7px);
+}
+main .cards-container-main ul li .card-cont button:active {
+    transform: translateY(-4px);
+}
+
+main .cards-container-main ul li .card-cont button .fa-star{
+    color: var(--primary-red);
+}
+main .cards-container-main ul li .card-cont .card-cont-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+main .cards-container-main ul li .card-cont .card-cont-img img {
+    width: 150px;
+    height: 168px;
+}

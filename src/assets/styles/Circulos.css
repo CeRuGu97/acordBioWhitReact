@@ -1,0 +1,16 @@
+main .fondo .tittle-cicul {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+main .fondo .cards-container-main .card-header-circulos {
+    margin-bottom: 50px;
+}
+main .fondo .cards-container-main .card-header-circulos h1 {
+    font-size: 2rem;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--black);
+    margin-bottom: 10px;
+}

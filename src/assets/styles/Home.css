@@ -1,0 +1,44 @@
+main{
+    background: linear-gradient(250deg, #201E1C 16.69%, #e9565e 100%);
+    padding-top: 8.5rem;
+    min-height: 100vh;
+    padding-bottom: 10px;
+}
+main .fondo {
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 5px;
+    min-height: 50vh;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+main .fondo h1 {
+    text-align: center;
+    font-size: 20px;
+}
+main .cards-container-main {
+    text-align: center;
+}
+main .cards-container-main ul{
+    list-style: none;
+    align-items: center;
+}
+main .cards-container-main .resultadoBuscado {
+    padding-bottom: 20px;
+    /* border-top: 2px solid var(--warm-black); */
+    margin-bottom: 15px;
+}
+main .cards-container-main ul li {
+    display: inline-block;
+}
+main .cards-container-main ul li .card-cont {
+    min-width: 150px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--just-white);
+    -webkit-box-shadow: 10px 10px 15px -9px rgba(133,74,19,1);
+    -moz-box-shadow: 10px 10px 15px -9px rgba(133,74,19,1);
+    box-shadow: 10px 10px 15px -9px rgba(133,74,19,1);
+}

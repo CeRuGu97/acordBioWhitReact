@@ -1,0 +1,53 @@
+:root {
+  /* Colores */
+  --bitcoin-orange: #f7931A;
+  --primary-coffe: #854A13;
+  --primary-red : #e9565e;
+  --soft-orange: #FFE9D5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201E1C;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #fAF8F7;
+  --just-white: #fff;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--warm-black);
+}
+body::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  border-right: 2px solid var(--warm-black);
+}
+@media screen and (min-width: 700px) {
+  main .fondo {
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+  main .fondo .search-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .fondo .search-container .input {
+    width: 30%;
+  }
+  main .fondo .main-tonos .main-tonos-family {
+    width: 85%;
+  }
+  main .cards-container-main ul li .card-cont {
+    padding: 10px;
+  }
+}
