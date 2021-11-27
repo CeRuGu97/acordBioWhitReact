@@ -15,9 +15,8 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
 }
-header nav ul li .imgContent{
-    width: 200px;
-    text-align: center;
+header nav ul .imgContent{
+    width: 116px;
 }
 header nav ul li .to{
     font-size: 2rem;

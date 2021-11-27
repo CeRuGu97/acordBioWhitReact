@@ -1,0 +1,44 @@
+.CreateTodoButton {
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    font-size: 18px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 8px;
+    z-index: 1;
+  }
+.CreateTodoButton div {
+    display: flex;
+    justify-content: space-around;
+}
+.CreateTodoButton div button {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    
+    font-size: 18px;
+    border-radius: 25px;
+    background: #fff;
+    transition: all .3s;
+    /* box-shadow: 0 0 12px var(--primary-red); */
+    color: #000;
+    /* border: 1px solid #fff; */
+}
+
+.CreateTodoButton div button:hover {
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid #fff;
+}

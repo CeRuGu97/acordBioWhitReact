@@ -13,11 +13,7 @@ const Header = () => (
                 <li className="imgContent">
                     <Link to="/" className="to">
                         <img className="logo" src={iconPage2} alt="icono de la pagina" />
-                        <span>
-                            <IfOffline>
-                                Offline
-                            </IfOffline>
-                        </span>
+                        <IfOffline>Offline</IfOffline>
                     </Link>
                 </li>
                 <li>
