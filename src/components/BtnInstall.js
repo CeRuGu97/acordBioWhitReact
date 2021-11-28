@@ -35,7 +35,7 @@ export const BtnInstall = () => {
             <h4>¿Te gustaria instalar nuestra app?</h4>
             <div>
                 <button onClick={hide}>Close</button>
-                <button onClick={onClick}>Add to homescreen</button>
+                <button onClick={onClick}>Add</button>
             </div>
         </div>
     );
