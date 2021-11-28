@@ -1,4 +1,5 @@
 import React from 'react';
+import OneSignal from 'react-onesignal';
 import icon from '../assets/static/iconPage2.png';
 
 export const Notificationt = () => {
@@ -18,6 +19,9 @@ export const Notificationt = () => {
             return; //return ranNot();
         }
         showNotification();
+        OneSignal.init({
+            appId: "3feaffeb-6d82-497b-90ea-3767f61d0fbf",
+        });
         //ranNot();
     }
 
