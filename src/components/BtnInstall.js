@@ -19,23 +19,23 @@ export const BtnInstall = () => {
 
     if (!isVisible) {
         return (
-            <div />
-            // <div className="CreateTodoButton">
-            //     <h4>¿Te gustaria instalar nuestra app?</h4>
-            //     <div>
-            //         <button  >Add To Home</button>
-            //         <button  >CLose</button>
-            //     </div>
-            // </div>
+            //<div />
+            <div className="CreateTodoButton">
+                <h3> Instala Bibliochords</h3>
+                <div>
+                    <button className="add"  >Add</button>
+                    <button  >CLose</button>
+                </div>
+            </div>
         )
     }
 
     return (
         <div className="CreateTodoButton" onClick={hide}>
-            <h4>¿Te gustaria instalar nuestra app?</h4>
+            <h3>Instala Bibliochords</h3>
             <div>
+                <button className="add" onClick={onClick}>Add</button>
                 <button onClick={hide}>Close</button>
-                <button onClick={onClick}>Add</button>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
-import OneSignal from 'react-onesignal';
 import icon from '../assets/static/iconPage2.png';
+import '../assets/styles/Notification.css';
 
 export const Notificationt = () => {
 
@@ -11,14 +11,14 @@ export const Notificationt = () => {
         }
         if (Notification.permission === 'default') {
             Notification.requestPermission();
-            OneSignal.init({
-                appId: "3feaffeb-6d82-497b-90ea-3767f61d0fbf",
-            });
+            // OneSignal.init({
+            //     appId: "3feaffeb-6d82-497b-90ea-3767f61d0fbf",
+            // });
         }
         if (Notification.permission === 'denied') {
             return alert("Bloqueaste las notificaciones :(")
         }
-        if (Notification.permission !== 'granted') {
+        if (Notification.permission === 'granted') {
             return; //return ranNot();
         }
         showNotification();
@@ -42,7 +42,9 @@ export const Notificationt = () => {
 
     return (
         <React.Fragment>
-            <button onClick={start}>Notification</button>
+            <button className="NotificationB" onClick={start}>
+                <i className="fas fa-bell"></i>
+            </button>
         </React.Fragment>
     )
 }

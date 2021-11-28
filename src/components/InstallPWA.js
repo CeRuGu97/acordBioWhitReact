@@ -24,11 +24,11 @@ export const InstallPWA = () => {
         }
         promptInstall.prompt();
     };
-    if (!supportsPWA) {
-        console.log("No se puede instalar por que no esta registrado como https");
-        //return <div>ps no</div>;
-    }
-    return { promptInstall, onClick };
+    // if (!supportsPWA) {
+    //     console.log("No se puede instalar por que no esta registrado como https");
+    //     //return <div>ps no</div>;
+    // }
+    return { promptInstall, onClick, supportsPWA };
     // (
     //     <button
     //         className="link-button"

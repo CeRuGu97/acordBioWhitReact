@@ -10,6 +10,8 @@ main .fondo {
     min-height: 50vh;
     padding-top: 10px;
     padding-bottom: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 main .fondo h1 {
     text-align: center;
