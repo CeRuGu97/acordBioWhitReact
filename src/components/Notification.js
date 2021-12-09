@@ -4,40 +4,32 @@ import '../assets/styles/Notification.css';
 
 export const Notificationt = () => {
 
-    const start = () => {
+    const start = async () => {
         // console.log('Notification start');
         if (!('Notification' in window) || !('serviceWorker' in navigator)) {
             return alert('Tu browser no soporta notificaciones');
         }
         if (Notification.permission === 'default') {
-            Notification.requestPermission();
-            // OneSignal.init({
-            //     appId: "3feaffeb-6d82-497b-90ea-3767f61d0fbf",
-            // });
+            await Notification.requestPermission();
         }
         if (Notification.permission === 'denied') {
             return alert("Bloqueaste las notificaciones :(")
         }
-        if (Notification.permission === 'granted') {
-            return; //return ranNot();
+        if (Notification.permission !== 'granted') {
+            return;
         }
         showNotification();
-
-        //ranNot();
     }
-
     const showNotification = async () => {
-        const registrationt = await navigator.serviceWorker.getRegistration();
-        // console.log(registrationt);
-        // console.log('showNotification');
+        const registrationt = await navigator.serviceWorker.getRegistration('./custom-service-worker.js');
         if (!registrationt) return alert("No hay un service worker");
-        navigator.serviceWorker.ready.then(function (registration) {
-            registration.showNotification('Prueba de notificacion', {
-                body: 'Btn de notificación',
-                icon,
-                image: { icon },
-            });
-        });
+        //navigator.serviceWorker.ready.then(function (registration) {
+        registrationt.showNotification('Prueba de notificacion', {
+            body: 'Btn de notificación',
+            icon,
+            image: { icon },
+        }, 'GET');
+        //});
     }
 
     return (

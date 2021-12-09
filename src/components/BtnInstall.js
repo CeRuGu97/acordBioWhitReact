@@ -18,16 +18,7 @@ export const BtnInstall = () => {
     );
 
     if (!isVisible) {
-        return (
-            //<div />
-            <div className="CreateTodoButton">
-                <h3> Instala Bibliochords</h3>
-                <div>
-                    <button className="add"  >Add</button>
-                    <button  >CLose</button>
-                </div>
-            </div>
-        )
+        return <div />;
     }
 
     return (
